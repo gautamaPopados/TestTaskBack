@@ -13,17 +13,17 @@ public class Interval {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private int start;
-    private int end;
+    private String leftBorder;
+    private String rightBorder;
     private String kind;
 
     public Interval() {
 
     }
 
-    public Interval(int start, int end, String kind) {
-        this.start = start;
-        this.end = end;
-        this.kind = "start";
+    public Interval(String leftBorder, String rightBorder, String kind) {
+        this.leftBorder = leftBorder;
+        this.rightBorder = rightBorder;
+        this.kind = kind;
     }
 }
